@@ -17,7 +17,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_name(credentials, scope)
 client = gspread.authorize(creds)
 
 
-WritingDocSheet = "test3"
+WritingDocSheet = "test2"
 ReadingDocSheet = "12_july_Sprint3"
 
 class Spreadsheet:
@@ -162,33 +162,29 @@ class Spreadsheet:
 
 	def generateReport_1ForAllGroups(self):
 
-		# Venu Report : test 
-		# cohort = "Cohort-14-Unit-3"
-		# self.generateReportForGroups("Report1", cohort)
+		# Venu Report
+		cohort = "Cohort-14-Unit-3"
+		self.generateReportForGroups("Report1", cohort)
 
-		# Lohit Report : test1
+		# Varun Report
 		# self.generateReportForGroups("Charlie_Report1", "Cohort-13-Unit-5_charlie" )
 		# self.generateReportForGroups("Delta_Report1", "Cohort-13-Unit-5_delta" )
 
-		# Varun Report : test3
-		# self.generateReportForGroups("alpha_Report1", "Cohort-13-Unit-5_alpha" )
-		self.generateReportForGroups("bravo_Report1", "Cohort-13-Unit-5_bravo" )
+		# Lohit Report
+		# self.generateReportForGroups("Charlie_Report1", "Cohort-13-Unit-5_charlie" )
+		# self.generateReportForGroups("Delta_Report1", "Cohort-13-Unit-5_delta" )
 
 
 
 	def generateReport_3ForAllGroups(self):
 
 		#Venu Report
-		# cohort = "Cohort-14-Unit-3"
-		# self.generateReport_3ForGroups("Report3", cohort )
+		cohort = "Cohort-14-Unit-3"
+		self.generateReport_3ForGroups("Report3", cohort )
 
-		#Lohit Report
+		#Varun Report
 		# self.generateReport_3ForGroups("Charlie_Report3", "Cohort-13-Unit-5_charlie")
 		# self.generateReport_3ForGroups("Delta_Report3", "Cohort-13-Unit-5_delta")
-
-		# Varun Report : test3
-		# self.generateReport_3ForGroups("alpha_Report3", "Cohort-13-Unit-5_alpha" )
-		self.generateReport_3ForGroups("bravo_Report3", "Cohort-13-Unit-5_bravo" )
 		
 
 
